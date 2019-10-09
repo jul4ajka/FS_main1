@@ -1,0 +1,49 @@
+.elements {
+    position: relative;
+    display: flex;
+    border-radius: 50%;
+    background-color: #e9fef0;
+    align-items: center;
+    justify-content: center;
+    z-index: 1;
+}
+
+.facial-sheet-on-board-img {
+    position: absolute;
+    background-image: url("../img/facial_sheet.png");
+    background-repeat: no-repeat;
+    background-position-x: -3px;
+    background-size: 104%;
+    z-index: 10;
+    -webkit-box-shadow: 0px 50px 99px -15px rgba(0, 0, 0, 0.24);
+    -moz-box-shadow: 0px 50px 99px -15px rgba(0, 0, 0, 0.24);
+    box-shadow: 0px 50px 99px -15px rgba(0, 0, 0, 0.24);
+}
+
+@media screen and (min-width: 769px) {
+    .elements {
+        height: 320px;
+        width: 320px;
+        bottom: -50px;  
+    }
+
+    .facial-sheet-on-board-img {
+        top: 260px;
+        width: 178px;
+        height: 225px;
+    }
+}
+
+@media screen and (max-width: 768px) {
+    .elements {
+        height: 180px;
+        width: 180px;
+        bottom: -20px;  
+    }
+
+    .facial-sheet-on-board-img {
+        bottom: 10px;
+        width: 90px;
+        height: 120px;
+    }
+}
